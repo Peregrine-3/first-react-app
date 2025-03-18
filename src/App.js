@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+import reactLogo from './logo.svg';
 import './App.css';
 import About from './About'
 import {Link} from 'react-router-dom';
+import logo from './swimHappyLogo.jpg';
 
 function IndexBody(){
   return(
@@ -16,20 +17,23 @@ function IndexBody(){
   );
 }
 
+function Navbar(){
+  return(
+    <nav className='navbar'>
+      <img src={logo} className='logo'></img>
+      <ul>
+        <li className='nav-link'><Link to='/'>Home</Link></li>
+        <li className='nav-link'><Link to='/About'>About</Link></li>
+      </ul>
+    </nav>
+  );
+}
+
 
 function App() {
     return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div className='menu'>
-          <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/About'>About</Link></li>
-          </ul>
-        </div>
-       <IndexBody /> 
-      </header>
+      <Navbar />
     </div>
   );
 
