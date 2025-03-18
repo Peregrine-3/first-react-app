@@ -73,21 +73,21 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.jenSummary{
+.coachSummary{
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.jenSummary p{
+.coachSummary p{
   text-align: left;
 }
 
-.jenPhoto{
+.coachPhoto{
   width: 500px;
 }
 
-.jenPhotoContainer{
+.coachPhotoContainer{
   display: grid;
   align-items: center;
   justify-content: center;
